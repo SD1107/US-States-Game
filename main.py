@@ -5,7 +5,7 @@ import turtle
 def continue_game():
     answer_state=my_screen.textinput(title=f"{len(correct)}/50 correct guesses!",prompt="What is the Name of the US State?")
     answer_state=answer_state.title()
-    data=pandas.read_csv("50_states.csv")
+    data=pandas.read_csv("day#25(Using Pandas and the US States game)\\50_states.csv")
     names=data.state
     
     if answer_state=="Exit":
@@ -33,7 +33,7 @@ correct=[]
 missing=[]
 my_screen.title("U.S. States Game")
 #my_screen.bgcolor("black")
-image="blank_states_img.gif"
+image="day#25(Using Pandas and the US States game)\\blank_states_img.gif"
 my_screen.addshape(image)
 turtle.shape(image)
 c=0
